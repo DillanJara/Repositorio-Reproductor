@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/128/3419/3419271.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_d.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e2022;">
+        <div class="container-fluid">
+            <a class="navbar-brand" title="Inicio" href="#">
+                <img src="https://image.flaticon.com/icons/png/128/3419/3419271.png" width="60" height="60" class="img-responsive" alt="Grupo Cero"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------------------------------------------------------>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8 caja-contenido">
+                <h2 class="text-center text-white">Subir Video</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="col justify-content-md-center" id="input-archivo">
+                            <img src="img/icono_input.png" class="img-input" alt="img">
+                            <input type="file" name="archivo" id="input-btn" accept="video" title="Subir video">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row justify-content-md-center" id="previewImagen">
+
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-outline-success" id="btn-limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------>
+    <footer class="text-center footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <p>
+                        <a title="Inicio" href="#">
+                            <img src="https://image.flaticon.com/icons/png/128/3419/3419271.png" alt="Grupo Cero"/>
+                        </a>
+                        <p class="text-center">©2021 GrupoCero. Diseñado por CEC</p>
+                    </p>
+                </div>
+                <div class="col-md-8 footer-col">
+                    <h4>El Tiempo</h4>
+                    <table class="table table-hover" id="tablaDatos">
+                        <thead>
+                            <tr>
+                                <th>Clima</th>
+                                <th>Temperatura</th>
+                                <th>Humedad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+    <!--Popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
