@@ -132,3 +132,15 @@ video {
     background-color: rgba(40, 209, 54, 0.35);
     color: white;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #949c9c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e2022;
+}
