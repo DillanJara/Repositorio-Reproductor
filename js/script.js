@@ -33,8 +33,8 @@ $(document).ready(function(){
 
         /* PREVISUALIZACION IMAGEN */
         function filePreview(input) {
-            var extension = /(.mp4)$/i;
-            var nombreArchivo = $("#input-btn").val()
+            let extension = /(.mp4)$/i;
+            let nombreArchivo = $("#input-btn").val()
             if(!extension.exec(nombreArchivo)) {
                 alert('Asegurese de seleccionar un archivo MP4')
                 nombreArchivo = '';

@@ -15,8 +15,8 @@ body {
 }
 
 .caja-contenido {
-    background-color: rgba(0, 0, 0, 0.750);
-    border: 4px solid white;
+    backdrop-filter: blur(2px);
+    border: 4px solid #ffffff;
     border-radius: 20px;
     padding: 20px;
     margin: 5%;
@@ -27,10 +27,9 @@ body {
 }
 
 .img-input {
-    background-image: radial-gradient(
-        rgb(255, 255, 255), 
-        rgb(0, 0, 0));
+    background: #e1dfdd;
     border-radius: 50%;
+    filter: invert(100%);
 }
 
 #input-archivo {
@@ -42,7 +41,6 @@ body {
     width: 20px;
     border-radius: 50%;
     text-align: center;
-    display: flexbox;
 }
 
 #input-btn {
@@ -56,7 +54,7 @@ body {
 }
 
 .icono {
-    width: max-width;
+    width: max-content;
     height: max-content;
 }
 
@@ -81,6 +79,7 @@ body {
 .footer-style {
     padding-top: 50px;
     background-color: #1e2022;
+    border-top: solid 1px white;
 }
 
 footer {
@@ -110,6 +109,8 @@ video {
     width: 100%;
     max-width: 640px;
     border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
 }
 
 .navbar-nav a {
