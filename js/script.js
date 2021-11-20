@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
         /* API CLIMA */
@@ -45,7 +47,8 @@ $(document).ready(function(){
                     var reader = new FileReader();
 
                     reader.onload = function(e) {
-                        $('#previewImagen').html("<video src="+e.target.result+" width='640px' height='360px' controls></video>");
+                        $('#player').removeAttr("hidden");
+                        $('#player').html("<source src="+e.target.result+" type='video/mp4'/>")
                     }
 
                     reader.readAsDataURL(input.files[0]);
